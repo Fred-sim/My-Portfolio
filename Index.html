@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tymur Marchenko markup developer portfolio website">
+  <title>Portfolio | Home page</title>
+  <link rel="icon" sizes="32x32" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/fonts/Manrope-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/fonts/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+  <script type="module" crossorigin src="/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+  <script type="module" crossorigin src="/assets/main-B7-b3YPh.js"></script>
+  <script type="module" crossorigin src="/assets/contact-form-CcESGrc7.js"></script>
+  <link rel="stylesheet" crossorigin href="/css/main.css">
+</head>
+
+<body class="home-page">
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <nav class="nav">
+
+        <a class="logo" href="/index.html#hero">
+  <img src="data:image/webp;base64,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" alt="logo" width="245" height="64">
+</a>
+        <button class="burger">
+  <span class="sr-only">Open/Close navigation</span>
+  <span class="burger__line"></span>
+</button>
+
+        <ul class="header-menu">
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="/index.html#hero">Home</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="/about.html#about">About</a>
+          </li>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#footer">Contact</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+  </div>
+</header>
+    
+
+    <main>
+
+      <section class="hero section-line" id="hero">
+  <div class="container">
+    <div class="hero__inner">
+
+      <h1 class="sr-only">front-end / markup developer Tymur Marchenko</h1>
+
+      <div class="hero__content">
+        <h1 class="hero__title title title--big">
+          hi, i am Fredrick Simiyu.
+        </h1>
+        <p class="hero__text">
+          Markup developer passionate about building accessible and user friendly websites.
+        </p>
+      </div>
+
+      <div class="hero__section">
+        <a class="btn" href="#footer">Contact me</a>
+        <ul class="social">
+  <li>
+    <a class="social__link icon-mask icon-mask--linkedin" href="https://www.linkedin.com/in/timur-marchenko/" target="_blank" rel="noreferrer">
+      <span class="sr-only">Go to linkedin page</span>
+    </a>
+  </li>
+  <li>
+    <a class="social__link icon-mask icon-mask--telegram" href="https://t.me/timliketea" target="_blank" rel="noreferrer">
+      <span class="sr-only">Go to github page</span>
+    </a>
+  </li>
+  <li>
+    <a class="social__link icon-mask icon-mask--github" href="https://github.com/timteaman" target="_blank">
+      <span class="sr-only" rel="noreferrer">Go to telegram page</span>
+    </a>
+  </li>
+</ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+      <section class="projects section-line" id="projects">
+  <div class="container">
+
+    <div class="projects__text">
+      <h2 class="projects__title title">Featured Projects</h2>
+      <p>
+        Here are some of the selected projects that showcase my passion for development.
+      </p>
+    </div>
+
+    <ul class="projects__group">
+
+      <li>
+        <article class="project-card" data-link="https://oasix.dev/">
+
+  <div class="project-card__inner">
+
+    <img class="project-card__img" src="/images/2.webp" alt="Oasix website preview image" height="260" width="545" loading="lazy">
+
+    <div class="project-card__text">
+      <h2 class="project-card__title">
+        Oasix
+      </h2>
+      <p>
+        Ecosystem of evolutions of digital real estate services.
+      </p>
+    </div>
+
+    <div class="project-card__wrapper">
+
+      <span class="project-card__info">
+        Project Info
+      </span>
+
+      <span class="project-card__year project-card__desc">
+        <span class="color-white">Year:</span>
+        2024
+      </span>
+
+      <span class="project-card__role project-card__desc">
+        <span class="color-white">Role:</span>
+        IT Consultant &amp; Front-end Developer
+      </span>
+    </div>
+
+    <ul class="links">
+      <li>
+        <a class="links__anchor icon-mask icon-mask--arrow text-underline" href="https://oasix.dev/" target="_blank" rel="noreferrer">Live
+          Demo</a>
+      </li>
+      <li>
+        <a class="links__anchor icon-mask icon-mask--github text-underline" href="#!" target="_blank" rel="noreferrer">See
+          on Github</a>
+      </li>
+    </ul>
+
+  </div>
+</article></li>
+
+      <li>
+        
+        <article class="project-card" data-link="https://pokoev.netlify.app/">
+
+  <div class="project-card__inner">
+
+    <img class="project-card__img" src="/images/1.webp" alt="Psy-pokoy website preview image" height="260" width="545" loading="lazy">
+
+    <div class="project-card__text">
+      <h2 class="project-card__title">
+        Psy-pokoy
+      </h2>
+      <p>
+        Providing career consulting, mental clarity, and therapy to support your growth and well-being.
+      </p>
+    </div>
+
+    <div class="project-card__wrapper">
+
+      <span class="project-card__info">
+        Project Info
+      </span>
+
+      <span class="project-card__year project-card__desc">
+        <span class="color-white">Year:</span>
+        2025
+      </span>
+
+      <span class="project-card__role project-card__desc">
+        <span class="color-white">Role:</span>
+        Markup developer
+      </span>
+    </div>
+
+    <ul class="links">
+      <li>
+        <a class="links__anchor icon-mask icon-mask--arrow text-underline" href="https://pokoev.netlify.app/" target="_blank" rel="noreferrer">Live
+          Demo</a>
+      </li>
+      <li>
+        <a class="links__anchor icon-mask icon-mask--github text-underline" href="#!" target="_blank" rel="noreferrer">See
+          on Github</a>
+      </li>
+    </ul>
+
+  </div>
+</article>
+      </li>
+
+      <li>
+        <article class="project-card" data-link="https://cargo-logistics.netlify.app/">
+
+  <div class="project-card__inner">
+
+    <img class="project-card__img" src="/images/4.webp" alt="GoodTransportation4U website preview image" height="260" width="545" loading="lazy">
+
+    <div class="project-card__text">
+      <h2 class="project-card__title">
+        Good Transportation
+      </h2>
+      <p>
+        GoodTransportation4U delivers reliable and timely transportation solutions.
+      </p>
+    </div>
+
+    <div class="project-card__wrapper">
+
+      <span class="project-card__info">
+        Project Info
+      </span>
+
+      <span class="project-card__year project-card__desc">
+        <span class="color-white">Year:</span>
+        2024
+      </span>
+
+      <span class="project-card__role project-card__desc">
+        <span class="color-white">Role:</span>
+        Markup developer
+      </span>
+    </div>
+
+    <ul class="links">
+      <li>
+        <a class="links__anchor icon-mask icon-mask--arrow text-underline" href="https://cargo-logistics.netlify.app/" target="_blank" rel="noreferrer">Live
+          Demo</a>
+      </li>
+      <li>
+        <a class="links__anchor icon-mask icon-mask--github text-underline" href="https://github.com/timteaman/simplefood" target="_blank" rel="noreferrer">See
+          on Github</a>
+      </li>
+    </ul>
+
+  </div>
+</article>
+      </li>
+
+      <li>
+        <article class="project-card" data-link="https://bicycle-market.netlify.app/">
+
+  <div class="project-card__inner">
+
+    <img class="project-card__img" src="/images/3.webp" alt="Bicycle store website preview image" height="260" width="545" loading="lazy">
+
+    <div class="project-card__text">
+      <h2 class="project-card__title">
+        Bicycle store
+      </h2>
+      <p>
+        Discover top-quality bicycles and gear at our store, designed to meet all your cycling needs.
+      </p>
+    </div>
+
+    <div class="project-card__wrapper">
+
+      <span class="project-card__info">
+        Project Info
+      </span>
+
+      <span class="project-card__year project-card__desc">
+        <span class="color-white">Year:</span>
+        2024
+      </span>
+
+      <span class="project-card__role project-card__desc">
+        <span class="color-white">Role:</span>
+        Markup developer
+      </span>
+    </div>
+
+    <ul class="links">
+      <li>
+        <a class="links__anchor icon-mask icon-mask--arrow text-underline" href="https://bicycle-market.netlify.app/" target="_blank" rel="noreferrer">Live
+          Demo</a>
+      </li>
+      <li>
+        <a class="links__anchor icon-mask icon-mask--github text-underline" href="https://github.com/timteaman/bicycle_market" target="_blank" rel="noreferrer">See
+          on Github</a>
+      </li>
+    </ul>
+
+  </div>
+</article>
+      </li>
+
+    </ul>
+
+    <button class="projects__button btn btn--disabled" type="button">
+      See more
+    </button>
+
+  </div>
+</section>
+      <section class="about section-line" id="about">
+  <div class="container">
+    <div class="about__wrapper">
+
+      <h2 class="about__title title title--big">
+        About me
+      </h2>
+      <div class="about__inner">
+        <div class="about__content">
+          <p class="about__header">
+            I am a markup developer focused on creating user-friendly web experiences.
+          </p>
+          <p class="about__text">
+            Hi, I'm a markup developer specializing in building adaptive and responsive websites that look great on
+            any
+            device. With a strong focus on clean, well-structured code, I create user-friendly interfaces that provide a
+            seamless experience for all users.
+          </p>
+        </div>
+
+        <a class="about__link text-underline" href="/about.html">
+          More about me
+        </a>
+
+        <div class="about__skills">
+
+          <span class="about__skills-text">My skills:</span>
+          <ul class="skills">
+  <li>
+    <a class="skills__item icon-bg icon-bg--html" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"></a>
+  </li>
+  <li>
+    <a class="skills__item icon-bg icon-bg--scss" href="https://sass-lang.com" target="_blank" rel="noreferrer"></a>
+  </li>
+  <li>
+    <a class="skills__item icon-bg icon-bg--javascript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"></a>
+  </li>
+  <li>
+    <a class="skills__item icon-bg icon-bg--github" href="https://github.com" target="_blank" rel="noreferrer"></a>
+  </li>
+</ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+  
+    
+      <div class="footer" id="footer">
+
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__group">
+
+        <h2 class="footer__title title">
+          Let’s connect
+        </h2>
+
+        <p class="footer__text">
+          Say hello at
+          <a class="footer__link color-white text-underline" href="mailto:tim.like.tea@gmail.com">tim.like.tea@gmail.com</a>
+        </p>
+
+        <p class="footer__text">
+          For more info, here’s my
+          <a class="footer__link color-white text-underline" href="https://drive.google.com/file/d/12LJkHwY3-etR4Jw31rBdCm331IuIeTyA/view?usp=sharing" target="_blank">resume</a>
+        </p>
+
+        <ul class="social">
+  <li>
+    <a class="social__link icon-mask icon-mask--linkedin" href="https://www.linkedin.com/in/timur-marchenko/" target="_blank" rel="noreferrer">
+      <span class="sr-only">Go to linkedin page</span>
+    </a>
+  </li>
+  <li>
+    <a class="social__link icon-mask icon-mask--telegram" href="https://t.me/timliketea" target="_blank" rel="noreferrer">
+      <span class="sr-only">Go to github page</span>
+    </a>
+  </li>
+  <li>
+    <a class="social__link icon-mask icon-mask--github" href="https://github.com/timteaman" target="_blank">
+      <span class="sr-only" rel="noreferrer">Go to telegram page</span>
+    </a>
+  </li>
+</ul>
+
+      </div>
+
+      <form class="form" action="send_email.php" method="POST" id="contactForm">
+
+        <label class="form__label" for="name">Name
+          <input class="form__input" type="text" name="name" id="name" placeholder="Your name" autocomplete="name">
+        </label>
+
+
+        <label class="form__label" for="email">Email
+          <input class="form__input" type="email" name="email" id="email" placeholder="Your email" autocomplete="email">
+        </label>
+
+
+        <label class="form__label" for="subject">Subject
+          <input class="form__input" type="text" name="subject" id="subject" placeholder="Subject" autocomplete="off">
+        </label>
+
+
+        <label class="form__label form__margin" for="message">Message
+          <textarea class="form__area" name="message" id="message" placeholder="Write your message" autocomplete="off"></textarea>
+        </label>
+
+        <button class="btn" type="submit">Submit</button>
+
+      </form>
+
+    </div>
+
+    <a class="footer__author" href="https://www.figma.com/@sumn2u" target="_blank" rel="noreferrer">Design by Fredrick simiyu</a>
+
+  </div>
+
+</div>
+    </div>
+  
+  
+</body>
+
+</html>
